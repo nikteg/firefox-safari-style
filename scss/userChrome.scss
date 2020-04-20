@@ -7,6 +7,7 @@
 @namespace html url("http://www.w3.org/1999/xhtml");
 
 $firefox-safari-style-show-favicons-in-tabs: true;
+$firefox-safari-style-show-favicons-in-bookmarks-toolbar: true;
 $firefox-safari-style-grayscale-favicons-in-tabs: false;
 $firefox-safari-style-grayscale-extension-buttons-in-toolbar: true;
 
@@ -798,8 +799,10 @@ $firefox-safari-style-grayscale-extension-buttons-in-toolbar: true;
             #personal-bookmarks {
                 #PlacesToolbarItems {
                     .bookmark-item {
-                        .toolbarbutton-icon {
-                            display: none !important;
+                        @if $firefox-safari-style-show-favicons-in-bookmarks-toolbar == false {
+                            .toolbarbutton-icon {
+                                display: none !important;
+                            }
                         }
                         .toolbarbutton-icon[type="menu"] + .toolbarbutton-text {
                             background: url("chrome://global/skin/icons/arrow-dropdown-16.svg") 100% 50% / 9px 9px no-repeat;

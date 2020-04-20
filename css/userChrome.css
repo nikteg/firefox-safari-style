@@ -822,9 +822,6 @@
   #navigator-toolbox #PersonalToolbar:-moz-window-inactive {
     border-top-color: var(--firefox-safari-style-bar-border-color-inactive) !important;
   }
-  #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbarItems .bookmark-item .toolbarbutton-icon {
-    display: none !important;
-  }
   #navigator-toolbox #PersonalToolbar #personal-bookmarks #PlacesToolbarItems .bookmark-item .toolbarbutton-icon[type=menu] + .toolbarbutton-text {
     background: url("chrome://global/skin/icons/arrow-dropdown-16.svg") 100% 50%/9px 9px no-repeat;
     padding-right: 12px !important;
